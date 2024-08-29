@@ -21,6 +21,10 @@ class Program
             {
                 case "1":
                     Console.WriteLine("Has seleccionado la opcion 1.");
+                    Console.WriteLine("1. Trancistor #1  costo: 120 Lps");
+                    Console.WriteLine("2. Trancistor #2  costo: 130 Lps");
+                    Console.WriteLine("3. Trancistor #3  costo: 150 Lps");
+                    string Trancistor =Console.ReadLine();
                     // Llogica para la opción 1
                     break;
 
@@ -35,13 +39,15 @@ class Program
                     break;
 
                 case "4":
-                    Console.WriteLine("Has seleccionado la opcion 4.");
-                    // Llogica para la opción 4
+                    Console.WriteLine("Saliendo del programa");
+                    continuar = false;
                     break;
 
                 default:
                     Console.WriteLine("Opcion no valida. intente de nuevo.");
                     break;
+
+            }
 
                 if (continuar)
                     {
@@ -49,7 +55,7 @@ class Program
                         Console.ReadKey();
                     }
                    
-            }
+            
         }
     }
 }
